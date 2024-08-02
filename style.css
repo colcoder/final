@@ -219,7 +219,6 @@ footer {
   padding: 10px;
   text-align: center;
   color: #FFCB05;
-  margin-top: 20px;
 }
 
 .photo-gallery {
@@ -333,7 +332,6 @@ form button:hover {
   
   .calendar th,
   .calendar td {
-    height: 60px;
   }
 }
 
@@ -368,7 +366,6 @@ form button:hover {
   
   .calendar th,
   .calendar td {
-    height: 70px;
   }
 }
 
@@ -406,6 +403,5 @@ form button:hover {
   
   .calendar th,
   .calendar td {
-    height: 80px;
   }
 }
