@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+div.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  background-color: #00274C;
+  color: #FFCB05;
+  padding-top: 15px 0;
+  padding-bottom: 0;
+}
+
+.header-image {
+  position: relative;
+}
+
+.header-image img {
+  width: 100%;
+}
+
+.header-image h1 {
+  font-size: 3em;
+  font-family: 'Libre Baskerville', serif;
+  color: #FFCB05;
+  font-weight: 700;
+}
+
+.non-index .header-image {
+  padding-top: 10px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slideshow .cycle-slideshow {
+  width: 100%;
+  height: 400px;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  background-color: #00274C;
+  padding: 10px 0;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  width: 150px;
+  border: 2px solid white;
+  line-height: 3em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+  color: #ffffff;
+  display: block;
+  text-transform: none;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFCB05;
+}
+
+.resources a {
+  color: #00274C;
+}
+
+.resources a:hover {
+  color: #FFCB05;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+aside.left {
+  width: 66.6%;
+}
+
+aside.right {
+  width: 33.3%;
+  padding-left: 20px;
+}
+
+.left-top,
+.left-bottom {
+  border: 3px dotted #00274C;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+aside img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  
+}
+
+.left-top p,
+.left-bottom p {
+  margin-top: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.news {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.news h2 {
+  margin-bottom: 10px;
+  color: #00274C;
+}
+
+.news h3 {
+  text-decoration: underline;
+}
+
+.news article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.news article img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.news article h3 {
+  margin: 0;
+  color: #00274C;
+}
+
+.news article p {
+  margin: 0;
+}
+
+.news a {
+  color: #00274C;
+}
+
+.calendar {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.calendar h2 {
+  margin-bottom: 10px;
+  color: #00274C;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.calendar th {
+  background-color: #f2f2f2;
+}
+
+.calendar td:hover {
+  background-color: #f9f9f9;
+}
+
+footer {
+  background-color: #00274C;
+  padding: 10px;
+  text-align: center;
+  color: #FFCB05;
+  margin-top: 20px;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.photo-gallery img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #00274C;
+  margin-bottom: 10px;
+}
+
+section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #00274C;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.social-media-links ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-media-links ul li a {
+  color: #00274C;
+  font-size: 1.5em;
+}
+
+.social-media-links ul li a:hover {
+  color: #FFCB05;
+}
+
+/* media queries */
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+  
+  .header-image h1 {
+    font-size: 2em;
+  }
+  
+  nav ul li {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  
+  .main-content {
+    flex-direction: column;
+  }
+  
+  aside.left,
+  aside.right {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .news article img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .calendar th,
+  .calendar td {
+    height: 60px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  
+  .header-image h1 {
+    font-size: 2.5em;
+  }
+  
+  nav ul li {
+    width: 120px;
+  }
+  
+  .main-content {
+    flex-direction: column;
+  }
+  
+  aside.left,
+  aside.right {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .news article img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .calendar th,
+  .calendar td {
+    height: 70px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .container {
+    width: 80%;
+  }
+  
+  .header-image h1 {
+    font-size: 3em;
+  }
+  
+  nav ul li {
+    width: 150px;
+  }
+  
+  .main-content {
+    flex-direction: row;
+  }
+  
+  aside.left {
+    width: 66.6%;
+  }
+  
+  aside.right {
+    width: 33.3%;
+    padding-left: 20px;
+  }
+  
+  .news article img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .calendar th,
+  .calendar td {
+    height: 80px;
+  }
+}
